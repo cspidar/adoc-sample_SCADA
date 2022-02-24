@@ -105,7 +105,6 @@ include::doc\400_screen\doc.adoc[leveloffset=+1]
 
 :imagesdir!: doc\400_screen
 
-
 <<<
 
 
