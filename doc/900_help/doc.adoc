@@ -1,0 +1,74 @@
+:stylesheet: ./asset/asciidoctor_autonics.css
+:doctype: book
+:sectnums:
+//넘버링 각 문서 시작에 써야 개별 문서 프리뷰에서 적용
+
+:xrefstyle: full
+:chapter-refsig:
+:section-refsig:
+:appendix-refsig:
+//상호참조 넘버링, chapter, section, appendix 이름 설정, 커스텀 네이밍 아직 지원 안됨 (예정)
+
+:hardbreaks:
+//자동 줄바꿈 각 문서 시작에 써야 개별 문서 프리뷰에서 적용
+:table-caption!:
+:table-number!:
+//테이블 타이틀 앞 글자 + 숫자 (Table 1.) 없애기
+:experimental:
+//실험 기능 확장
+
+:example-caption!:
+:example-number!:
+//==== block 앞 글자(example) + 숫자 (1.) 없애기
+:figure-caption!:
+:stem: latexmath
+
+//목차 설정
+:toclevels: 5
+:toc-title: Contents
+:toc: left
+
+//이미지 크기
+:10: pdfwidth=10%, width=10%
+:20: pdfwidth=20%, width=20%
+:30: pdfwidth=30%, width=30%
+:40: pdfwidth=40%, width=40%
+:50: pdfwidth=50%, width=50%
+:60: pdfwidth=60%, width=60%
+:70: pdfwidth=70%, width=70%
+:80: pdfwidth=80%, width=80%
+:90: pdfwidth=90%, width=90%
+:100: pdfwidth=100%, width=100%
+
+
+//아이콘
+:icon_width: width=20pt
+:icon_pdfwidth: pdfwidth=7pt
+:icon_dir: image:images
+
+:연결: {icon_dir}\@연결.svg[{icon_width}, {icon_pdfwidth}]
+
+
+
+
+
+
+
+
+
+= 도움말
+SCADAMaster 사용 시 도움이 되는 정보를 표시합니다.
+
+== 정보
+SCADAMaster-Designer 정보:: 현재 사용중인 SCADAMaster-Designer의 버전을 표시합니다.
+라이선스 키락 정보:: 현재 PC에 장착된 키락의 정보가 표시됩니다.
+모델 이름, 라이선스 종류, 사용 가능한 태그 수, 사용 가능한 클라이언트 수, 사용 가능한 웹 클라이언트 수, 라이선스 옵션, 시리얼 번호가 표시됩니다.
+
+== 도움말
+((사용자 매뉴얼)) PDF 파일이 열립니다.
+사용자 매뉴얼은 Autonics 웹사이트 (www.autonics.com)에서도 다운받을 수 있습니다. 최신 업데이트 정보는 웹사이트를 참조하십시오.
+menu:SERVICE[자료실 > 매뉴얼] 에서 'SCADAMaster' 키워드로 검색하면 검색 결과에서 'SCADAMaster 사용자 매뉴얼'을 찾을 수 있습니다. 웹사이트 로그인 후 다운로드하십시오.
+사용자 매뉴얼을 인쇄는 PDF 리더 소프트웨어를 통해 할 수있습니다. PDF 리더 소프트웨어로 다운받은 사용자 매뉴얼 PDF 파일을 열고 '인쇄' 메뉴를 클릭하십시오. 
+
+
+

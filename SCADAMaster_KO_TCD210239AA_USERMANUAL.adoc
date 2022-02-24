@@ -1,0 +1,178 @@
+:stylesheet: ./custom.css
+:linkcss:
+//스타일 참조경로 HTML, PDF는 별도 설정 파일이 있음
+
+//국문 커버
+:title-page-background-image: image:./images/covers/title-bg_A5.png[]
+:back-cover-image: image:./images/covers/back-cover_A5.pdf[]
+
+//영문 커버
+// :title-page-background-image: image:./images/covers/title-bgEN_A5.png[]
+// :back-cover-image: image:./images/covers/back-coverEN_A5.pdf[]
+
+
+//넘버링 각 문서 시작에 써야 개별 문서 프리뷰에서 적용
+:sectnums:
+:sectnumlevels: 4
+//헤딩 넘버링 depth
+
+//자동 줄바꿈 각 문서 시작에 써야 개별 문서 프리뷰에서 적용
+:hardbreaks:
+
+//챕터 이름 Chapter 대신 사용할 이름 설정 (없음 으로 변경)
+:chapter-label:
+
+:doctype: book
+:docinfo: shared
+
+//목차 설정
+:toclevels: 3
+:toc-title: Contents
+:toc: left
+//:subtitle: 사용자 매뉴얼
+
+:media: prepress
+//페이지 recto/verso 여백 설정
+
+//:icons: font
+:icons: image
+:icontype: svg
+
+
+// 제목, 문서 속성 설정 시작
+
+= SCADAMaster: SCADA Software
+:revnumber: User Manual {nbsp}{nbsp}{nbsp} TCD210239AA
+//:revdate:
+//:revremark:
+//기본 버전 위치 양식 (행) 사용 안함
+:version-label!:
+
+// 제목, 문서 속성 설정 끝
+
+
+<<<
+
+// preface 시작
+
+:imagesdir: doc\000_preface
+
+include::doc\000_preface\preface.adoc[]
+
+:imagesdir!: doc\000_preface
+
+<<<
+
+// preface 끝
+
+
+
+// 본문 시작
+
+:imagesdir: doc\100_SCADA
+
+include::doc\100_SCADA\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\100_SCADA
+
+<<<
+
+
+
+
+:imagesdir: doc\200_start
+
+include::doc\200_start\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\200_start
+
+<<<
+
+
+:imagesdir: doc\300_project
+
+include::doc\300_Project\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\300_project
+
+
+<<<
+
+
+:imagesdir: doc\400_screen
+
+include::doc\400_screen\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\400_screen
+
+
+<<<
+
+
+:imagesdir: doc\500_basic_setting
+
+include::doc\500_basic_setting\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\500_basic_setting
+
+<<<
+
+
+:imagesdir: doc\600_network_setting
+
+include::doc\600_network_setting\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\600_network_setting
+
+<<<
+
+
+:imagesdir: doc\700_function_setting
+
+include::doc\700_function_setting\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\700_function_setting
+
+<<<
+
+:imagesdir: doc\800_drawing
+
+include::doc\800_drawing\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\800_drawing
+
+<<<
+    
+
+:imagesdir: doc\900_help
+
+include::doc\900_help\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\900_help
+
+<<<
+
+
+:imagesdir: doc\1000_troubleshooting
+
+include::doc\1000_troubleshooting\doc.adoc[leveloffset=+1]
+
+:imagesdir!: doc\1000_troubleshooting
+
+<<<
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[index]
+== Index

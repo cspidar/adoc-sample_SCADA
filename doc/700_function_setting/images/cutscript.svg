@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3F434B;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-linecap:round;}
+	.st2{fill:none;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:1.5;}
+</style>
+<path id="body" class="st0" d="M10,0h20c5.5,0,10,4.5,10,10v20c0,5.5-4.5,10-10,10H10C4.5,40,0,35.5,0,30V10C0,4.5,4.5,0,10,0z"/>
+<g id="icon" transform="translate(858.041 445.117)">
+	<g id="그룹_6226">
+		<path id="선_676" class="st1" d="M-842.4-432l7.8,7.8"/>
+		<path id="선_677" class="st1" d="M-833.3-432l-7.8,7.8"/>
+		<g id="타원_659" transform="translate(0 7.181)">
+			<circle class="st2" cx="-843.1" cy="-428.1" r="3.9"/>
+			<circle class="st3" cx="-843.1" cy="-428.1" r="3.2"/>
+		</g>
+		<g id="타원_660" transform="translate(10.445 7.181)">
+			<circle class="st2" cx="-843.1" cy="-428.1" r="3.9"/>
+			<circle class="st3" cx="-843.1" cy="-428.1" r="3.2"/>
+		</g>
+	</g>
+</g>
+</svg>

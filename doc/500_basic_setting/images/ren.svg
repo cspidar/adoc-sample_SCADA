@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 34 32" style="enable-background:new 0 0 34 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#000000;stroke-width:1.6;}
+	.st2{fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;}
+	.st3{fill:none;stroke:#000000;stroke-width:1.5;}
+</style>
+<g id="icon">
+	<g id="body-2" transform="translate(0 3.087)">
+		<path class="st0" d="M8,7h18c1.1,0,2,0.9,2,2v7c0,1.1-0.9,2-2,2H8c-1.1,0-2-0.9-2-2V9C6,7.9,6.9,7,8,7z"/>
+		<path class="st1" d="M8,7.8h18c0.7,0,1.2,0.5,1.2,1.2v7c0,0.7-0.5,1.2-1.2,1.2H8c-0.7,0-1.2-0.5-1.2-1.2V9C6.8,8.4,7.3,7.8,8,7.8z
+			"/>
+	</g>
+	<g id="cursor" transform="translate(5.528)">
+		<path id="패스_1436" class="st2" d="M6,7h2.9"/>
+		<path id="패스_1437" class="st2" d="M6,24.5h2.9"/>
+		<path id="패스_1438" class="st3" d="M7.5,7v17.5"/>
+	</g>
+</g>
+</svg>

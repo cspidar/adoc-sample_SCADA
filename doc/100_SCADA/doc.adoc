@@ -1,0 +1,277 @@
+:stylesheet: ./asset/asciidoctor_autonics.css
+:doctype: book
+:sectnums:
+//넘버링 각 문서 시작에 써야 개별 문서 프리뷰에서 적용
+
+:xrefstyle: full
+:chapter-refsig:
+:section-refsig:
+:appendix-refsig:
+//상호참조 넘버링, chapter, section, appendix 이름 설정, 커스텀 네이밍 아직 지원 안됨 (예정)
+
+:hardbreaks:
+//자동 줄바꿈 각 문서 시작에 써야 개별 문서 프리뷰에서 적용
+:table-caption!:
+:table-number!:
+//테이블 타이틀 앞 글자 + 숫자 (Table 1.) 없애기
+:experimental:
+//실험 기능 확장
+
+:example-caption!:
+:example-number!:
+//==== block 앞 글자(example) + 숫자 (1.) 없애기
+:figure-caption!:
+:stem: latexmath
+
+//목차 설정
+:toclevels: 5
+:toc-title: Contents
+:toc: left
+
+//pdf 이미지 크기
+:10: pdfwidth=10%, width=10%
+:20: pdfwidth=20%, width=20%
+:30: pdfwidth=30%, width=30%
+:40: pdfwidth=40%, width=40%
+:50: pdfwidth=50%, width=50%
+:60: pdfwidth=60%, width=60%
+:70: pdfwidth=70%, width=70%
+:80: pdfwidth=80%, width=80%
+:90: pdfwidth=90%, width=90%
+:100: pdfwidth=100%, width=100%
+
+
+//아이콘
+:icon_width: width=20pt
+:icon_pdfwidth: pdfwidth=10pt
+:icon_dir: image:images
+
+:연결: {icon_dir}\@연결.svg[{icon_width}, {icon_pdfwidth}]
+
+
+
+= SCADAMaster
+
+== SCADAMaster 소개
+
+SCADAMaster는 각종 PLC, 제어기기로 구성된 공정, 시설, 설비 등의 운행을 감시·제어하고 데이터를 취득하는 PC 소프트웨어입니다. 취득된 데이터는 사용자가 이해할 수 있도록 그래프·차트와 같은 형태로 변환되거나, 연결된 데이터베이스에 누적되어 동향 분석 등에 사용됩니다.
+
+== 특징
+
+SCADAMaster는 블라블라합니다.::
+동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 
+
+SCADAMaster는 블라블라블라 하고 블라블라합니다.::
+동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 
+무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
+
+SCADAMaster는 블라블라합니다.::
+동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 
+
+SCADAMaster는 블라블라블라 하고 블라블라합니다.::
+동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 
+무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
+
+SCADAMaster는 블라블라합니다.::
+동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 
+
+SCADAMaster는 블라블라블라 하고 블라블라합니다.::
+동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 
+무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
+
+<<<
+
+
+== 기능
+
+.페이지
+[cols="18, 82, 20", options="header", frame=topbot]
+|===
+|이름  |설명           |참조
+|일반 페이지  |화면에 표시되는 기본 페이지입니다. 프로젝트에 설정된 기본 해상도의 크기로 생성됩니다.|<<#link_page>>
+|팝업 페이지 |조건이 만족하면 기본 페이지 위에 팝업 형태로 나타나는 페이지입니다. 페이지 크기, 팝업 위치 등을 설정할 수 있습니다.|<<#link_page>>
+|===
+
+
+.네트워크
+[cols="18, 82, 20", options="header", frame=topbot]
+|===
+|이름           |설명           |참조
+|통신 드라이버  |시스템에서 감시·제어할 외부 기기와의 통신을 설정합니다.|<<#link_communication>>
+|Network        |시스템 이중화 설정을 위해 서버·클라이언트 시스템 종류 및 동기화 데이터를 설정합니다.|<<#link_network>>
+|OPC UA         |OPA UA 서버 구동을 위한 연결 정보를 설정합니다.|<<#link_opc_ua>>
+|Database       |외부 데이터베이스 연결 정보를 설정합니다. 사용 가능한 데이터베이스 종류에는 Microsoft SQL Server, MySQL, MariaDB, ODBC, Oracle, PostgreSQL, SQLite, IBM DB2, InterBase가 있습니다.  |<<#link_database>>
+|MQTT           |MQTT 메시징 프로토콜의 사용 환경을 설정합니다. |<<#link_MQTT>>
+|메시지   |E-mail 및 SMS 메시징 환경을 설정합니다.|<<#link_message>>
+|===
+
+.기능
+[cols="18, 82, 20", options="header", frame=topbot]
+|===
+|이름               |설명           |참조
+|데이터 수집        |데이터 수집을 설정합니다.|<<#link_daq>>
+|다국어             |자주 사용하는 문자열 및 다국어 관리를 위한 문자열 테이블을 설정합니다.|<<#link_multilanguage>>
+|경보               |경보 조건 및 동작을 설정합니다.|<<#link_alarm>>
+|일정               |스케줄을 설정합니다.|<<#link_schedule>>
+|레시피             |일괄적으로 태그값을 전송할 레시피 테이블을 설정합니다.|<<#link_recipe>>
+|보고서             |설정한 보고서 형식에 맞춰 데이터를 인쇄하거나 CSV 파일로 저장합니다.|<<#link_report>>
+|스크립트    |사용자 스크립트를 생성합니다.|<<#link_script>>
+|애니메이션 에디터  |사용자 애니메이션 파일을 생성하거나 GIF 애니메이션 파일을 추가·편집합니다.|<<#link_animation_editor>>
+|사용자 보안        |프로젝트 보안 강화를 위해 사용자 계정 및 보안 레벨 등을 설정합니다.|<<#link_security>>
+|공용 설정        |프로젝트 전역에 적용되는 프로젝트, 스플래쉬, 화면, 멀티미디어 항목을 설정합니다.|<<#link_project_setting>>
+|===
+
+
+<<<
+
+
+
+.((기본 오브젝트))
+[cols="18, 82, 20", options="header", frame=topbot]
+|===
+|이름    |설명           |참조
+|선      |직선을 그리고 조건·효과·동작을 설정합니다. |<<#link_basic_object>>
+|사각형  |사각형을 그리고 조건·효과·동작을 설정합니다.|<<#link_basic_object>>
+|원형    |원을 그리고 조건·효과·동작을 설정합니다.|<<#link_basic_object>>
+|다각형  |다각형을 그리고 조건·효과·동작을 설정합니다.|<<#link_basic_object>>
+|다중선  |다중선을 그리고 조건·효과·동작을 설정합니다.|<<#link_basic_object>>
+|호      |호를 그리고 조건·효과·동작을 설정합니다.|<<#link_basic_object>>
+|파이    |파이를 그리고 조건·효과·동작을 설정합니다.|<<#link_basic_object>>
+|현      |현을 그리고 조건·효과·동작을 설정합니다.|<<#link_basic_object>>
+|===
+
+.((고급 오브젝트))
+[cols="18, 82, 20", options="header", frame=topbot]
+|===
+|이름           |설명           |참조
+|이미지         |이미지를 삽입하고 조건·효과·동작을 설정합니다. 삽입 가능한 이미지 파일에는 BMP, JPG, JPEG, PNG, SVG가 있습니다.|<<#link_image>>
+|애니메이션     |애니메이션을 삽입하고 조건·효과를 설정합니다. 삽입 가능한 애니메이션 파일 종류에는 GIF, ANM(SCADAMaster 애니메이션 편집기로 생성)이 있습니다.|<<#link_animation>>
+|디지털 태그    |디지털 태그값을 표시하는 오브젝트를 그리고 조건·효과·동작을 설정합니다.|<<#link_das>>
+|아날로그 태그  |아날로그 태그값을 표시하는 오브젝트를 그리고 조건·효과·동작을 설정합니다.|<<#link_das>>
+|문자열 태그    |문자열 태그값을 표시하는 오브젝트를 그리고 조건·효과·동작을 설정합니다.|<<#link_das>>
+|스위치/램프    |스위치/램프를 그리고 조건·효과를 설정합니다.|<<#link_switch_lamp>>
+|경보 목록      |시스템에서 발생한 경보를 표시하는 리스트를 그리고 조건·효과를 설정합니다.|<<#link_alarm_list>>
+|트렌드         |태그값의 변화 추이를 보여주는 꺾은선 그래프를 그리고 조건·효과를 설정합니다.|<<#link_trend>>
+|차트           |여러개의 태그값을 비교·분석할 수 있는 차트를 그리고 조건·효과를 설정합니다. 차트 종류에는 막대형·선형·분포형·원형·도넛형 차트가 있습니다. |<<#link_chart>>
+|에디트 박스    |사용자가 값을 직접 입력할 수 있는 오브젝트를 그리고 조건·효과를 설정합니다.|<<#link_edit_box>>
+|라디오 버튼    |그룹 박스 내 아이템 중 원하는 항목을 선택하는 오브젝트를 그리고 조건·효과를 설정합니다.|<<#link_radio_button>>
+|체크 박스      |체크/비 체크 형태로 데이터를 관리하는 오브젝트를 그리고 조건·효과를 설정합니다.|<<#link_check_box>>
+|콤보 박스      |아이템 리스트를 드롭하여 원하는 항목을 선택하는 오브젝트를 그리고 조건·효과를 설정합니다. |<<#link_combo_box>>
+|날짜/시간      |날짜/시간을 표시하는 오브젝트를 그리고 조건·과를 설정합니다.|<<#link_date_time>>
+|DAQ 테이블     |설정된 태그의 데이터의 변동 추이를 실시간으로 표시하는 표를 그리고 조건·효과를 설정합니다.|<<#link_daq_table>>
+|데이터 테이블     |설정된 태그의 값을 쓰기/읽기 할 수 있는 표를 그리고 조건·효과를 설정합니다.|<<#link_data_table>>
+|===
+
+
+== 구성품
+(((구성품)))
+[horizontal]
+SCADAMaster-DS:: 
+- USB 메모리
+- USB 라이선스 키락
+- 키락 태그
+- 사용자 매뉴얼
+- USB 취급설명서
+- Autonics 최종 사용자 소프트웨어 라이선스 약관
+
+[horizontal]
+SCADAMaster-RS:: 
+- USB 라이선스 키락
+- 키락 태그
+- Autonics 최종 사용자 소프트웨어 라이선스 약관
+
+<<<
+
+
+== 라이선스 키락
+
+SCADAMaster를 사용하려면 SCADAMaster 버전에 맞는 ((라이선스 키락))이 필요합니다. SCADAMaster를 실행하기 전 PC에 USB 형태의 라이선스 키락을 먼저 장착하십시오. 키락이 장착되지 않았거나 목적에 맞지 않은 키락이 장착되어 있을 경우, SCADAMaster는 데모 모드로 작동됩니다.
+
+연결된 키락의 정보는 SCADAMaster의 menu:도움말[정보] 에서 확인할 수 있습니다.
+
+=== 종류
+
+.((SCADAMaster-DS)): 개발 소프트웨어
+프로젝트 파일을 제작하는데 사용됩니다.
+[cols="4, 5", width=50%, options="header",frame=topbot]
+|===
+|사용 가능 실 태그 수|모델명
+|75|SCADAMaster-DS-075
+|150|SCADAMaster-DS-150
+|500|SCADAMaster-DS-500
+|1,500|SCADAMaster-DS-1500
+|3,000|SCADAMaster-DS-3000
+|64,000|SCADAMaster-DS-FULL
+|===
+
+
+.((SCADAMaster-RS)): 실행 소프트웨어
+프로젝트 파일을 실행하는데 사용됩니다.
+[cols="4, 5", width=50%, options="header",frame=topbot]
+|===
+|사용 가능 실 태그 수|모델명
+|75|SCADAMaster-RS-075
+|150|SCADAMaster-RS-150
+|500|SCADAMaster-RS-500
+|1,500|SCADAMaster-RS-1500
+|3,000|SCADAMaster-RS-3000
+|64,000|SCADAMaster-RS-FULL
+|===
+
+
+<<<
+
+
+
+== 설치/제거
+
+=== 시스템 사양
+
+SCADAMaster 사용에 필요한 운영체제와 컴퓨터 사양은 다음과 같습니다.
+
+운영체제::
+Windows 10, Windows Server 2019
+
+컴퓨터 사양::
++
+[cols="3, 5, 5", width=60%, options="header",frame=topbot]
+|===
+|항목       |최소 사양    |권장 사양
+|CPU        |Dual Core    |Dual Core
+|메모리     |4 GB         |≥ 8 GB 
+|하드디스크 |10 GB        |≥ 8 GB 
+|===
+
+
+[IMPORTANT]
+사용중인 그래픽 카드의 최신 드라이버 설치를 권장합니다.
+
+
+
+=== SCADAMaster의 설치
+SCADAMaster의 설치 파일은 패키지에 동봉된 USB 메모리에 저장되어 있으며, Autonics 홈페이지에서도 다운받을 수 있습니다. 
+
+. SCADAMaster 설치 파일을 실행하십시오.
+. 설치 언어를 선택하고 btn:[OK]를 클릭하십시오. 설치 언어에는 한글과 영어가 있습니다.
+. Microsoft Visual C\++ 설치 대화창이 나타나면 동의함 에 체크하고 설치 를 클릭하십시오. PC에 Microsoft Visual C++이 설치되어 있으면 해당 과정은 생략되며, SCADAMaster 설치 마법사가 바로 실행됩니다.
+. Microsoft Visual C++의 설치가 진행되는 동안 대기하십시오.
+. Microsoft Visual C++의 설치가 완료되면 btn:[닫기]를 클릭하십시오. 그러면 SCADAMaster 설치 마법사가 시작됩니다.
+. SCADAMaster 설치 마법사가 시작되면 btn:[다음>]을 클릭하여 설치를 진행하십시오.
+. 사용권 계약을 확인하고 btn:[동의함]을 클릭하십시오.
+. 설치 구성 요소를 선택하고 btn:[다음]을 클릭하십시오.
+. 설치 위치를 선택하고 btn:[설치]를 클릭하십시오.
+. SCADAMaster의 설치가 진행되는 동안 대기하십시오.
+. 설치가 완료되면 PC를 재부팅하십시오.
+
+[NOTE]
+SCADAMaster 설치 전 <<_시스템_사양>>을 확인한 후 설치하십시오. 
+
+
+=== SCADAMaster의 제거
+SCADAMaster의 제거는 [Windows 제어판 > 앱 및 기능] 에서 할 수 있습니다.
+
+. 설치된 앱 목록에서 SCADAMaster를 클릭하여 btn:[제거] 버튼을 클릭하십시오. SCADAMaster 제거 마법사가 나타납니다.
+. 제거를 진행하려면 btn:[예]를 클릭하시고, 취소하려면 btn:[아니오]를 클릭하십시오.
+. 제거가 완료되면 btn:[확인]을 클릭하여 SCADAMaster 제거를 마무리하십시오.
+
+
