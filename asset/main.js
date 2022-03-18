@@ -1,31 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // // UI 버튼
-  // const targetMenu = document.querySelector("body");
-  // const uiMenu = document.createElement("div");
-  // uiMenu.className = "uiMenu";
-  // uiMenu.setAttribute("onclick", "this.classList.toggle('open')");
-  // targetMenu.appendChild(uiMenu);
+  // UI 버튼
+  const targetMenu = document.querySelector("body");
+  const uiMenu = document.createElement("div");
+  uiMenu.className = "uiMenu";
+  uiMenu.setAttribute("onclick", "this.classList.toggle('open')");
+  targetMenu.appendChild(uiMenu);
 
-  // const targetButton = document.querySelector(".uiMenu");
+  const targetButton = document.querySelector(".uiMenu");
 
-  // const uiButtonToc = document.createElement("div");
-  // uiButtonToc.innerHTML = "목차";
-  // uiButtonToc.className = "uiButton toc";
-  // uiButtonToc.addEventListener("click", (e) => {
-  //   e.stopPropagation();
-  //   const toc = document.querySelector("#toc");
-  //   const body = document.querySelector("body");
-  //   if (body.classList.contains("toc2")) {
-  //     body.classList.remove("toc2");
-  //     body.classList.remove("toc-left");
-  //     toc.style.display = "none";
-  //   } else {
-  //     body.classList.add("toc2");
-  //     body.classList.add("toc-left");
-  //     toc.style.display = "block";
-  //   }
-  // });
-  // targetButton.appendChild(uiButtonToc);
+  const uiButtonToc = document.createElement("div");
+  uiButtonToc.innerHTML = "<";
+  uiButtonToc.className = "uiButton toc";
+  uiButtonToc.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const toc = document.querySelector("#toc");
+    const body = document.querySelector("body");
+    if (body.classList.contains("toc2")) {
+      body.classList.remove("toc2");
+      body.classList.remove("toc-left");
+      toc.style.transform = "translateX(-22vw)";
+      // toc.style.display = "none";
+    } else {
+      body.classList.add("toc2");
+      body.classList.add("toc-left");
+      toc.style.transform = "";
+      // toc.style.display = "block";
+    }
+  });
+  targetButton.appendChild(uiButtonToc);
 
   // const uiButtonPdf = document.createElement("div");
   // uiButtonPdf.addEventListener("click", function (e) {

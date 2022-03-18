@@ -55,6 +55,41 @@
     url("./font/noto-sans-kr-v25-latin_korean-900.woff2") format("woff2"),
     url("./font/noto-sans-kr-v25-latin_korean-900.woff") format("woff");
 }
+@font-face {
+  font-family: "code";
+  font-style: normal;
+  font-weight: 100;
+  src: local(""), url("./font/D2Coding-Ver1.3.2-20180524.woff2") format("woff2"),
+    url("./font/D2Coding-Ver1.3.2-20180524.woff") format("woff");
+}
+@font-face {
+  font-family: "16segment";
+  font-style: normal;
+  font-weight: 100;
+  src: local(""), url("./font/Autonics_16segment_210419.woff2") format("woff2"),
+    url("./font/Autonics_16segment_210419.woff") format("woff");
+}
+@font-face {
+  font-family: "12segment";
+  font-style: normal;
+  font-weight: 100;
+  src: local(""), url("./font/Autonics_12segment_191209.woff2") format("woff2"),
+    url("./font/Autonics_12segment_191209.woff") format("woff");
+}
+@font-face {
+  font-family: "11segment";
+  font-style: normal;
+  font-weight: 100;
+  src: local(""), url("./font/Autonics_11segment_191209.woff2") format("woff2"),
+    url("./font/Autonics_11segment_191209.woff") format("woff");
+}
+@font-face {
+  font-family: "7segment";
+  font-style: normal;
+  font-weight: 100;
+  src: local(""), url("./font/Autonics_7segment_191209.woff2") format("woff2"),
+    url("./font/Autonics_7segment_191209.woff") format("woff");
+}
 :root {
   --mainFontSize: 16px;
   --colorBackground: #ffffff;
@@ -133,7 +168,6 @@ span img {
   vertical-align: text-bottom;
 }
 td.icon {
-  /* background-color: var(--gray0); */
   padding: 0.5rem;
   padding-bottom: 0rem;
 }
@@ -159,8 +193,26 @@ body * {
 #toc.toc2 .sectlevel1 {
   width: 100%;
 }
+/* #toc {
+  transition-duration: 100ms;
+} */
+/* .uiButton.toc {
+  position: fixed;
+  left: 22vw;
+  border: solid 4px;
+  border-radius: 4px;
+  bottom: 48vh;
+  z-index: 999;
+  cursor: pointer;
+  padding: 0.4rem 0.5rem;
+  height: 50px;
+  width: 10px;
+} */
 
 @media only screen and (min-width: 768px) {
+  .uiButton.toc {
+    display: none;
+  }
   #toc.toc2 {
     width: 22vw;
     margin-left: 0vw;
@@ -230,8 +282,6 @@ body * {
   margin: 0;
   padding-left: 0.7vw;
 }
-#toc ul.sectlevel3 a {
-}
 #toc ul {
   list-style: none;
   padding-left: 0.2rem;
@@ -245,10 +295,10 @@ body * {
 #toc .sectlevel2 a::before {
   color: red;
 }
-
 .tocImg {
   display: none;
 }
+
 #logo {
   display: block;
   height: 9vh;
@@ -344,7 +394,7 @@ div.details {
 }
 .sect3 + .sect3 {
   border-top: 1px solid var(--gray2);
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 h2,
@@ -364,7 +414,7 @@ h2,
 h3,
 .h3,
 span.prefaceh3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-top: 4rem;
   margin-bottom: 0.5rem;
@@ -376,27 +426,27 @@ span.prefaceh3 {
 h4,
 .h4 {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
   color: var(--gray8);
 }
 h5,
 .h5 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: bold;
-  margin-top: 1.3rem;
-  margin-bottom: 0rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
   color: var(--gray8);
 }
 h6,
 .h6,
 h7,
 .h7 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-top: 1.4rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
   color: var(--gray8);
 }
 
@@ -415,6 +465,9 @@ div.paragraph {
   line-height: 1.88;
 }
 
+/* div.ulist {
+  padding-bottom: 0.5rem;
+} */
 div.ulist > ul {
   padding-left: 1.2rem;
   line-height: 1.75;
@@ -427,6 +480,10 @@ div.ulist > ul {
   margin-top: 0;
 }
 
+.admonitionblock {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .admonitionblock > table {
   color: var(--gray7);
   border-collapse: collapse;
@@ -450,12 +507,20 @@ div.ulist > ul {
 }
 .admonitionblock > table td.content {
   padding-left: 1.2em;
-  padding-right: 1.2em;
+  padding-right: 1.6em;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
 }
 .admonitionblock > table td.content > .paragraph > p {
   margin: 0;
+}
+.admonitionblock .title {
+  margin-top: 0.5rem;
+}
+.admonitionblock .hdlist tbody tr:last-child .ulist ul,
+.admonitionblock > table table:last-child,
+.admonitionblock .hdlist:last-child {
+  margin-bottom: 0rem;
 }
 
 /*  */
@@ -465,9 +530,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   background: #fff;
-  margin-bottom: 1rem;
   border: solid 1px var(--gray5);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
 }
 p.tableblock:last-child {
   margin-bottom: 0;
@@ -568,7 +633,7 @@ p.tableblock > code:only-child {
 }
 
 table.tableblock thead th {
-  border-top: 2px solid var(--ao0);
+  border-top: 0.125rem solid var(--ao0);
   color: var(--gray7);
   margin: 0;
   line-height: 1.88;
@@ -602,7 +667,7 @@ hr {
 }
 
 #content a {
-  background: linear-gradient(to bottom, var(--ao1) 0%, var(--ao1) 100%);
+  background: linear-gradient(to bottom, var(--gray5) 0%, var(--gray5) 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 1px 1px;
@@ -613,10 +678,10 @@ hr {
 #content a:hover {
   background-size: 1px 3px;
 }
-#content a:visited {
+/* #content a:visited {
   background-size: 2px 50px;
   color: var(--gray6);
-}
+} */
 
 b.caret {
   color: var(--ao0);
@@ -653,7 +718,6 @@ img[src="images/icons/Important.svg"] {
 }
 
 /* hdlist */
-
 .dlist .hdlist1,
 .hdlist .hdlist1 {
   color: var(--gray7);
@@ -685,23 +749,58 @@ img[src="images/icons/Important.svg"] {
   background: none;
 }
 td.hdlist1 {
-  padding: 0.65rem;
-  padding-right: 1.5rem;
+  /* padding: 0.65rem;
   padding-bottom: 0.8rem;
   width: 15%;
-  min-width: 9vw;
-  line-height: 1.6;
+  line-height: 1.6; */
+  min-width: 10rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
 }
 td.hdlist2 {
   padding: 0;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
   vertical-align: top;
+}
+td.hdlist2 ul {
+  margin-bottom: 0rem;
 }
 
 span.image {
   display: inline-block;
+  margin: 0rem;
+}
+span.image > img {
+  vertical-align: middle;
+}
+p > br + span.image {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.exampleblock {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: 0.125rem solid var(--gray1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+.exampleblock > .title:first-child {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: min(100%, 64rem);
+}
+
+/* 안전을 위한 주의사항 */
+div.sect2 > h3 > span.image > img {
+  margin-bottom: 0.2rem;
+  padding-right: 0.5rem;
 }
 
 /* 커스텀 문법 */
@@ -709,26 +808,33 @@ span.image {
   letter-spacing: 0.7rem;
 }
 
-/* * 7seg: 7segment 폰트 적용
-[.7seg]#7SEGMENT#
-
-* 11seg: 11segment 폰트 적용
-[.11seg]#11SEGMENT#
-
-* 12seg: 12segment 폰트 적용
-[.12seg]#12SEGMENT#
-
-* 16seg: 16segment 폰트 적용
-[.16seg]#16SEGMENT#
-
-* red: red 색상
-[.red]#RED#
-
-* blue: blue 색상
-[.blue]#BLUE#
-
-* gray: gray 색상
-[.gray]#GRAY# */
+.seg7 {
+  font-family: "7segment";
+}
+.seg11 {
+  font-family: "11segment";
+}
+.seg12 {
+  font-family: "12segment";
+}
+.seg16 {
+  font-family: "16segment";
+}
+.code {
+  font-family: "code";
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.small {
+  font-size: 0.8rem;
+}
+.large {
+  font-size: 1.1rem;
+}
 
 @media print {
   #toc {

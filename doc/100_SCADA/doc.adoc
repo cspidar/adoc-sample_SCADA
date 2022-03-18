@@ -241,8 +241,7 @@ Windows 10, Windows Server 2019
 |메모리     |4 GB         |≥ 8 GB 
 |하드디스크 |10 GB        |≥ 8 GB 
 |===
-
-
++
 [IMPORTANT]
 사용중인 그래픽 카드의 최신 드라이버 설치를 권장합니다.
 

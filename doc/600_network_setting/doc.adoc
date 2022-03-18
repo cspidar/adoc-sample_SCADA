@@ -1137,7 +1137,7 @@ New_tag2=100
 <tagName>New_tag2</tagName> <tagValue>100</tagValue> 
 </tag> 
 </tagList>
-|JSON	|tag.name=tag.value	|{"tagList":[{"tagName":"Tag_0001","tagValue":"0"},{"tagName":"Tag_0002","tagValue":"0"}]}
+|JSON	|tag.name=tag.value	|{"tagList":[{"tagName":"Tag_0001", "tagValue":"0"}, {"tagName":"Tag_0002", "tagValue":"0"}]}
 |===	
 
 
