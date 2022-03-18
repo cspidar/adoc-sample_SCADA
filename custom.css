@@ -114,8 +114,6 @@
   display: block;
   font-family: "Noto Sans KR";
   font-style: normal;
-  /* word-break: break-all; */
-  word-break: break-all;
   color: var(--gray7);
   font-weight: normal;
   margin: 0;
@@ -852,7 +850,8 @@ div.sect2 > h3 > span.image > img {
 
 @media only screen and (max-width: 48rem) {
   html {
-    font-size: 14px;
+    /* word-break: break-all; */
+    font-size: 12px;
   }
 }
 
