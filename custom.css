@@ -115,7 +115,7 @@
   font-family: "Noto Sans KR";
   font-style: normal;
   /* word-break: break-all; */
-  word-break: keep-all;
+  word-break: break-all;
   color: var(--gray7);
   font-weight: normal;
   margin: 0;
@@ -847,6 +847,12 @@ div.sect2 > h3 > span.image > img {
   body.toc-left {
     width: 70vw;
     margin-left: 25vw;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  :root {
+    font-size: 14px;
   }
 }
 
