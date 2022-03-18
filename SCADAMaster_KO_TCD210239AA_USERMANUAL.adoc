@@ -1,5 +1,6 @@
 :stylesheet: ./custom.css
 :linkcss:
+:lang: ko
 //스타일 참조경로 HTML, PDF는 별도 설정 파일이 있음
 
 //국문 커버
