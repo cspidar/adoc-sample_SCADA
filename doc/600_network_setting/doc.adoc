@@ -1066,28 +1066,28 @@ Retain:: 브로커 서버에 전송한 데이터의 저장 여부를 지정합�
 |2022.12.09 14:00:30 New_tag1=10
 |XML	
 |<tag>
-<tagDate>tag.date </ tagDate >
-<tagTime>tag.time </ tagTime >
-<tagName>tag.name </tagName>
-<tagValue>tag.value </tagValue>
+<tagDate> tag.date </ tagDate >
+<tagTime> tag.time </ tagTime >
+<tagName> tag.name </tagName>
+<tagValue> tag.value </tagValue>
 </tag>	
 |<tag>
-<tagDate>2022.12.09</ tagDate >
-<tagTime>14:00:30</ tagTime >
-<tagName> New_tag1</tagName>
-<tagValue>10</tagValue>
+<tagDate> 2022.12.09 </ tagDate >
+<tagTime> 14:00:30 </ tagTime >
+<tagName> New_tag1 </tagName>
+<tagValue> 10 </tagValue>
 </tag>
 |JSON	
 |{
-"tagDate":"tag.date",
-"tagTime":"tag.time",
-"tagName":"tag.name", 
+"tagDate" : "tag.date",
+"tagTime" : "tag.time",
+"tagName" : "tag.name", 
 "tagValue" : "tag.value"
 }	
 |{
-"tagDate":"2022.12.09",
-"tagTime":"14:00:30",
-"tagName":" New_tag1", 
+"tagDate" : "2022.12.09",
+"tagTime" : "14:00:30",
+"tagName" : " New_tag1", 
 "tagValue" : "10"
 }
 |===
@@ -1109,12 +1109,12 @@ Retain:: 브로커 서버에 전송한 데이터의 저장 여부를 지정합�
 New_tag2=100
 |XML
 |tag.name=tag.value	<tag>
-<tagName> New_tag1</tagName>
-<tagValue>10</tagValue>
+<tagName> New_tag1 </tagName>
+<tagValue> 10 </tagValue>
 </tag>
 |<tag>
-<tagName> New_tag2</tagName>
-<tagValue>100</tagValue>
+<tagName> New_tag2 </tagName>
+<tagValue> 100 </tagValue>
 </tag>
 |JSON
 |tag.name=tag.value	
@@ -1131,13 +1131,13 @@ New_tag2=100
 |XML	|tag.name=tag.value	
 |<tagList> 
 <tag>
-<tagName>New_tag1</tagName> <tagValue>10</tagValue> 
+<tagName> New_tag1 </tagName> <tagValue>10 </tagValue> 
 </tag> 
 <tag>
-<tagName>New_tag2</tagName> <tagValue>100</tagValue> 
+<tagName> New_tag2 </tagName> <tagValue>100 </tagValue> 
 </tag> 
 </tagList>
-|JSON	|tag.name=tag.value	|{"tagList":[{"tagName":"Tag_0001", "tagValue":"0"}, {"tagName":"Tag_0002", "tagValue":"0"}]}
+|JSON	|tag.name=tag.value	|{"tagList" : [{"tagName" : "Tag_0001", "tagValue" : "0"}, {"tagName" : "Tag_0002", "tagValue" : "0"}]}
 |===	
 
 

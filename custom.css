@@ -114,7 +114,7 @@
   display: block;
   font-family: "Noto Sans KR";
   font-style: normal;
-  word-break: keep-all;
+  word-break: break-all;
   color: var(--gray7);
   font-weight: normal;
   margin: 0;
@@ -208,37 +208,6 @@ body * {
   height: 50px;
   width: 10px;
 } */
-
-@media only screen and (min-width: 768px) {
-  .uiButton.toc {
-    display: none;
-  }
-  #toc.toc2 {
-    width: 22vw;
-    margin-left: 0vw;
-    z-index: 100;
-    border-right: 1px solid var(--gray1);
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
-  #toc.toc2 .sectlevel1 {
-    height: 85vh;
-    overflow: auto;
-    padding-bottom: 2vh;
-    margin-top: 0;
-    width: 19vw;
-  }
-  body {
-    width: 96vw;
-    margin-left: 2vw;
-  }
-  body.toc-left {
-    width: 70vw;
-    margin-left: 25vw;
-  }
-}
 
 /*  */
 
@@ -749,12 +718,8 @@ img[src="images/icons/Important.svg"] {
   background: none;
 }
 td.hdlist1 {
-  /* padding: 0.65rem;
-  padding-bottom: 0.8rem;
-  width: 15%;
-  line-height: 1.6; */
-  min-width: 10rem;
-  padding-right: 1.5rem;
+  min-width: 2.5rem;
+  padding-right: 1rem;
   padding-top: 0.5rem;
 }
 td.hdlist2 {
@@ -764,6 +729,15 @@ td.hdlist2 {
 }
 td.hdlist2 ul {
   margin-bottom: 0rem;
+}
+/* 통신 주기 */
+.hdlist2 .hdlist1:first-child {
+  padding-top: 0rem;
+  margin-top: 0rem;
+}
+.hdlist2 .hdlist2 *:first-child {
+  padding-top: 0rem;
+  margin-top: 0rem;
 }
 
 span.image {
@@ -834,6 +808,45 @@ div.sect2 > h3 > span.image > img {
 }
 .large {
   font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    word-break: keep-all;
+  }
+  td.hdlist1 {
+    min-width: 10rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+  }
+  .uiButton.toc {
+    display: none;
+  }
+  #toc.toc2 {
+    width: 22vw;
+    margin-left: 0vw;
+    z-index: 100;
+    border-right: 1px solid var(--gray1);
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  #toc.toc2 .sectlevel1 {
+    height: 85vh;
+    overflow: auto;
+    padding-bottom: 2vh;
+    margin-top: 0;
+    width: 19vw;
+  }
+  body {
+    width: 96vw;
+    margin-left: 2vw;
+  }
+  body.toc-left {
+    width: 70vw;
+    margin-left: 25vw;
+  }
 }
 
 @media print {
