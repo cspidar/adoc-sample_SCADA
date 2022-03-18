@@ -810,7 +810,7 @@ div.sect2 > h3 > span.image > img {
   font-size: 1.1rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   :root {
     word-break: keep-all;
   }
