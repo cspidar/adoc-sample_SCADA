@@ -114,7 +114,8 @@
   display: block;
   font-family: "Noto Sans KR";
   font-style: normal;
-  word-break: break-all;
+  /* word-break: break-all; */
+  word-break: keep-all;
   color: var(--gray7);
   font-weight: normal;
   margin: 0;
