@@ -815,7 +815,7 @@ div.sect2 > h3 > span.image > img {
     word-break: keep-all;
   }
   td.hdlist1 {
-    min-width: 10rem;
+    min-width: calc(2rem + 10vw);
     padding-right: 1.5rem;
     padding-top: 0.5rem;
   }
