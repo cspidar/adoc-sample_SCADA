@@ -109,6 +109,7 @@
 }
 :root {
   color: var(--gray8);
+  word-break: keep-all;
   background-color: var(--colorBackground);
   font-size: var(--mainFontSize);
   display: block;
@@ -810,9 +811,9 @@ div.sect2 > h3 > span.image > img {
 }
 
 @media only screen and (min-width: 48rem) {
-  :root {
+  /* :root {
     word-break: keep-all;
-  }
+  } */
   td.hdlist1 {
     min-width: calc(2rem + 10vw);
     padding-right: 1.5rem;
