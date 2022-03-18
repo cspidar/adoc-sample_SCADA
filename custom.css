@@ -849,7 +849,7 @@ div.sect2 > h3 > span.image > img {
 }
 
 @media only screen and (max-width: 48rem) {
-  html {
+  :root {
     /* word-break: break-all; */
     font-size: 12px;
   }
