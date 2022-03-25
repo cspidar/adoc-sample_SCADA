@@ -849,6 +849,10 @@ div.sect2 > h3 > span.image > img {
   font-size: 1.1rem;
 }
 
+.uiButton.pdf {
+  display: none;
+}
+
 @media only screen and (min-width: 54rem) {
   /* :root {
     word-break: keep-all;
@@ -858,9 +862,7 @@ div.sect2 > h3 > span.image > img {
     padding-right: 1.5rem;
     padding-top: 0.5rem;
   }
-  .uiButton.toc {
-    display: none;
-  }
+
   #toc.toc2 {
     width: 22vw;
     margin-left: 0vw;
@@ -890,6 +892,18 @@ div.sect2 > h3 > span.image > img {
   body.toc-left {
     width: 70vw;
     margin-left: 25vw;
+  }
+  .uiButton.toc {
+    display: none;
+  }
+  .uiButton.pdf {
+    display: block;
+  }
+  .uiButton:hover {
+    background-color: var(--gray0);
+    color: var(--gray8);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
+    transform: translateY(-1px);
   }
 }
 
