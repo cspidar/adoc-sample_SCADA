@@ -473,7 +473,7 @@ div.ulist > ul {
 }
 .admonitionblock > table td.icon {
   color: var(--gray7);
-  min-width: 1.5rem;
+  min-width: 1.4rem;
   padding-left: 0.4rem;
   background-color: var(--gray1);
 }
