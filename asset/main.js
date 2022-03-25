@@ -19,12 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.remove("toc2");
       body.classList.remove("toc-left");
       toc.classList.remove("hide");
+      body.classList.add("show");
       // toc.style.transform = "translateX(-70vw)";
       // toc.style.display = "none";
     } else {
       body.classList.add("toc2");
       body.classList.add("toc-left");
       toc.classList.add("hide");
+      body.classList.remove("show");
       // toc.style.transform = "";
       // toc.style.display = "block";
     }

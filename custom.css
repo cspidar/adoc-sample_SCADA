@@ -890,7 +890,8 @@ div.sect2 > h3 > span.image > img {
     width: 96vw;
     margin-left: 2vw;
   }
-  body.toc-left {
+  body.toc-left,
+  body.show {
     width: 70vw;
     margin-left: 25vw;
   }
