@@ -117,10 +117,14 @@
   font-weight: normal;
   margin: 0;
   line-height: 1.88;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* 스크롤바 */
