@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const targetButton = document.querySelector(".uiMenu");
 
   const uiButtonToc = document.createElement("div");
-  uiButtonToc.innerHTML = "<";
+  uiButtonToc.innerHTML = "목차";
   uiButtonToc.className = "uiButton toc";
   uiButtonToc.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -18,15 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
     if (body.classList.contains("toc2")) {
       body.classList.remove("toc2");
       body.classList.remove("toc-left");
-      toc.style.transform = "translateX(-22vw)";
+      toc.classList.remove("hide");
+      // toc.style.transform = "translateX(-70vw)";
       // toc.style.display = "none";
     } else {
       body.classList.add("toc2");
       body.classList.add("toc-left");
-      toc.style.transform = "";
+      toc.classList.add("hide");
+      // toc.style.transform = "";
       // toc.style.display = "block";
     }
   });
+  document.querySelector("#toc").classList.add("hide");
   targetButton.appendChild(uiButtonToc);
 
   // const uiButtonPdf = document.createElement("div");

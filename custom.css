@@ -1,7 +1,4 @@
 @charset "UTF-8";
-
-/* 전역 */
-/* noto-sans-kr-100 - latin_korean */
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -24,7 +21,7 @@
   font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 400;
-  src: local(""),
+  src: local(""), url("./font/NotoSansKR-Regular.otf") format("opentype"),
     url("./font/noto-sans-kr-v25-latin_korean-regular.woff2") format("woff2"),
     url("./font/noto-sans-kr-v25-latin_korean-regular.woff") format("woff");
 }
@@ -59,8 +56,8 @@
   font-family: "code";
   font-style: normal;
   font-weight: 100;
-  src: local(""), url("./font/D2Coding-Ver1.3.2-20180524.woff2") format("woff2"),
-    url("./font/D2Coding-Ver1.3.2-20180524.woff") format("woff");
+  src: local(""), url("./font/D2Coding-Ver1.3.2-20180524.woff2") format("woff2");
+  /* url("./font/D2Coding-Ver1.3.2-20180524.woff") format("woff"); */
 }
 @font-face {
   font-family: "16segment";
@@ -110,10 +107,11 @@
 :root {
   color: var(--gray8);
   word-break: keep-all;
+  /* overflow-wrap: break-word; */
   background-color: var(--colorBackground);
   font-size: var(--mainFontSize);
   display: block;
-  font-family: "Noto Sans KR";
+  font-family: "Noto Sans KR", sans-serif;
   font-style: normal;
   color: var(--gray7);
   font-weight: normal;
@@ -178,7 +176,6 @@ td.icon {
 /* wide */
 
 body,
-#toc.toc2,
 .toc-left {
   width: 90vw;
   margin-left: 5vw;
@@ -187,27 +184,24 @@ body * {
   max-width: 100%;
 }
 #toc.toc2 {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
   z-index: 100;
-  margin-left: 0vw;
+  font-size: 1rem;
 }
 #toc.toc2 .sectlevel1 {
-  width: 100%;
+  height: 85vh;
+  width: 60vw;
+  overflow-y: scroll;
+  padding-bottom: 2vh;
+  margin-top: 0;
 }
-/* #toc {
-  transition-duration: 100ms;
-} */
-/* .uiButton.toc {
-  position: fixed;
-  left: 22vw;
-  border: solid 4px;
-  border-radius: 4px;
-  bottom: 48vh;
-  z-index: 999;
-  cursor: pointer;
-  padding: 0.4rem 0.5rem;
-  height: 50px;
-  width: 10px;
-} */
+#toc.hide {
+  transform: translateX(-70vw);
+}
 
 /*  */
 
@@ -321,7 +315,7 @@ h1 {
   margin-bottom: 2rem;
 }
 .titleMain {
-  font-size: 3.3rem;
+  font-size: 4rem;
   font-weight: 100;
   letter-spacing: 1.08px;
   text-align: left;
@@ -333,7 +327,7 @@ h1 {
   font-size: 1.125rem;
   /* font-family: "notoSansBlack"; */
   color: var(--gray6);
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 0.72px;
   margin-left: 0.5rem;
   text-align: left;
@@ -404,7 +398,7 @@ h5,
 .h5 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: var(--gray8);
 }
@@ -414,7 +408,7 @@ h7,
 .h7 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 1.4rem;
+  margin-top: 1.8rem;
   margin-bottom: 0.5rem;
   color: var(--gray8);
 }
@@ -426,7 +420,7 @@ h7,
   color: var(--gray7);
   text-align: left;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.3rem;
 }
 
@@ -504,7 +498,7 @@ table {
   margin-top: 0.7rem;
 }
 p.tableblock:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 td.tableblock > .content {
   margin-bottom: 1rem;
@@ -614,8 +608,39 @@ table.tableblock tbody p {
   color: var(--gray7);
   margin: 0;
   line-height: 1.88;
-  padding: 0.5rem;
+  margin: 0.5rem;
 }
+
+table div.ulist,
+table div.hdlist {
+  margin-left: 0.5rem;
+}
+td.tableblock.halign-left.valign-top {
+  margin-left: 0.5rem;
+}
+/* table.tableblock.frame-ends.grid-all div.ulist > ul > li:last-child {
+  padding-bottom: 0.2rem;
+} */
+table.tableblock div.ulist > ul > li > p {
+  margin-left: 0rem;
+}
+table.tableblock td.tableblock {
+  padding-bottom: 0.5rem;
+}
+table.tableblock td.tableblock div.title {
+  margin-left: 0.5rem;
+  margin-bottom: 0rem;
+}
+table.tableblock td.tableblock div.title:first-child {
+  margin-top: 0.5rem;
+}
+table.tableblock td.tableblock div.title + p {
+  margin-top: 0rem;
+}
+table.tableblock td.tableblock p:last-child {
+  margin-bottom: 0rem;
+}
+
 /*  */
 
 /* 요소 */
@@ -682,8 +707,8 @@ img[src="images/icons/Caution.svg"],
 img[src="images/icons/Warning.svg"],
 img[src="images/icons/Important.svg"] {
   width: 1.8rem;
-  padding-bottom: 0.2rem;
-  padding-right: 0.5rem;
+  padding-bottom: 0.8rem;
+  padding-right: 0rem;
 }
 
 /* hdlist */
@@ -730,7 +755,6 @@ td.hdlist2 {
 td.hdlist2 ul {
   margin-bottom: 0rem;
 }
-/* 통신 주기 */
 .hdlist2 .hdlist1:first-child {
   padding-top: 0rem;
   margin-top: 0rem;
@@ -738,6 +762,12 @@ td.hdlist2 ul {
 .hdlist2 .hdlist2 *:first-child {
   padding-top: 0rem;
   margin-top: 0rem;
+}
+dd > table {
+  margin-top: 0rem;
+}
+dd > table > caption.title {
+  margin-top: 0.5rem;
 }
 
 span.image {
@@ -810,7 +840,7 @@ div.sect2 > h3 > span.image > img {
   font-size: 1.1rem;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 54rem) {
   /* :root {
     word-break: keep-all;
   } */
@@ -831,6 +861,8 @@ div.sect2 > h3 > span.image > img {
     position: fixed;
     left: 0;
     top: 0;
+    transform: none;
+    font-size: 0.9rem;
   }
   #toc.toc2 .sectlevel1 {
     height: 85vh;
@@ -838,6 +870,9 @@ div.sect2 > h3 > span.image > img {
     padding-bottom: 2vh;
     margin-top: 0;
     width: 19vw;
+  }
+  #toc.hide {
+    transform: none;
   }
   body {
     width: 96vw;
@@ -849,10 +884,10 @@ div.sect2 > h3 > span.image > img {
   }
 }
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 50rem) {
   :root {
     /* word-break: break-all; */
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -905,3 +940,20 @@ div.sect2 > h3 > span.image > img {
     display: inherit !important;
   }
 }
+
+/* UI */
+#toc {
+  transition-duration: 100ms;
+}
+/* .uiButton.toc {
+  position: fixed;
+  left: 22vw;
+  border: solid 4px;
+  border-radius: 4px;
+  bottom: 48vh;
+  z-index: 999;
+  cursor: pointer;
+  padding: 0.4rem 0.5rem;
+  height: 50px;
+  width: 10px;
+} */
