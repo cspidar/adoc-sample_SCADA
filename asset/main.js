@@ -32,20 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#toc").classList.add("hide");
   targetButton.appendChild(uiButtonToc);
 
-  // const uiButtonPdf = document.createElement("div");
-  // uiButtonPdf.addEventListener("click", function (e) {
-  //   window.onbeforeprint = function () {
-  //     // window.PagedPolyfill.preview();
-  //   };
+  const uiButtonPdf = document.createElement("div");
+  uiButtonPdf.addEventListener("click", function (e) {
+    window.onbeforeprint = function () {
+      // window.PagedPolyfill.preview();
+    };
 
-  //   window.print();
+    window.print();
 
-  //   window.onafterprint = function () {};
-  // });
+    window.onafterprint = function () {};
+  });
 
-  // uiButtonPdf.innerHTML = "PDF";
-  // uiButtonPdf.className = "uiButton pdf";
-  // targetButton.appendChild(uiButtonPdf);
+  uiButtonPdf.innerHTML = "PDF";
+  uiButtonPdf.className = "uiButton pdf";
+  targetButton.appendChild(uiButtonPdf);
 
   //
 
