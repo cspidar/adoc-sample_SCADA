@@ -473,10 +473,11 @@ div.ulist > ul {
 }
 .admonitionblock > table td.icon {
   color: var(--gray7);
-  width: 1.2rem;
+  width: 1.4rem;
   padding-left: 0.4rem;
   background-color: var(--gray1);
 }
+
 .admonitionblock > table td.content {
   padding-left: 1.2em;
   padding-right: 1.6em;
