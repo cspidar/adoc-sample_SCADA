@@ -193,7 +193,7 @@ SCADAMaster를 사용하려면 SCADAMaster 버전에 맞는 ((라이선스 키�
 
 .((SCADAMaster-DS)): 개발 소프트웨어
 프로젝트 파일을 제작하는데 사용됩니다.
-[cols="4, 5", width=50%, options="header",frame=topbot]
+[cols="~, ~", options="header",frame=topbot]
 |===
 |사용 가능 실 태그 수|모델명
 |75|SCADAMaster-DS-075
@@ -207,7 +207,7 @@ SCADAMaster를 사용하려면 SCADAMaster 버전에 맞는 ((라이선스 키�
 
 .((SCADAMaster-RS)): 실행 소프트웨어
 프로젝트 파일을 실행하는데 사용됩니다.
-[cols="4, 5", width=50%, options="header",frame=topbot]
+[cols="~, ~", options="header",frame=topbot]
 |===
 |사용 가능 실 태그 수|모델명
 |75|SCADAMaster-RS-075
@@ -234,7 +234,7 @@ Windows 10, Windows Server 2019
 
 컴퓨터 사양::
 +
-[cols="3, 5, 5", width=60%, options="header",frame=topbot]
+[cols="~, ~, ~", width=60%, options="header",frame=topbot]
 |===
 |항목       |최소 사양    |권장 사양
 |CPU        |Dual Core    |Dual Core
